@@ -1178,7 +1178,7 @@ const person = object({
   color: string().default('red').required(),
 });
 
-const nameAndAge = person.omit('color']);
+const nameAndAge = person.omit(['color']);
 nameAndAge.getDefault(); // => { age: 30, name: 'pat'}
 ```
 
